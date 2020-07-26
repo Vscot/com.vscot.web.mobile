@@ -35,9 +35,15 @@
   "lint-staged": {
     "**/*.less": "stylelint --syntax less",
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 10"],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
   "dependencies": {
     "@ant-design/icons": "^4.0.0",
     "@ant-design/pro-layout": "^6.2.5",
@@ -67,7 +73,6 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.13",
-    "@umijs/fabric": "^2.2.0",
     "@umijs/plugin-blocks": "^2.0.5",
     "@umijs/preset-ant-design-pro": "^1.2.0",
     "@umijs/preset-react": "^1.4.8",
@@ -75,6 +80,7 @@
     "@umijs/yorkie": "^2.0.3",
     "carlo": "^0.9.46",
     "chalk": "^4.0.0",
+    "com.vscot.fabric": "^0.0.2",
     "cross-env": "^7.0.0",
     "cross-port-killer": "^1.1.1",
     "detect-installer": "^1.0.1",
@@ -90,7 +96,9 @@
     "puppeteer-core": "^5.0.0",
     "stylelint": "^13.0.0"
   },
-  "engines": { "node": ">=10.0.0" },
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "checkFiles": [
     "src/**/*.js*",
     "src/**/*.ts*",
